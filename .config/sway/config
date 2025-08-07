@@ -5,12 +5,15 @@
 # Read `man 5 sway` for a complete reference.
 
 # Font
-
 font pango: JetBrains Mono 12
+
+# Borders 
+default_border none
 
 # Gaps
 gaps inner 6
 gaps outer 6
+
 
 ### Variables
 #
@@ -29,7 +32,7 @@ set $term alacritty
 set $menu wofi --show run
 
 # Default Browser
-set $brow brave-browser
+set $brow brave
 
 include /etc/sway/config-vars.d/*
 
