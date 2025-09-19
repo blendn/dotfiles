@@ -58,7 +58,7 @@ return {
   },
   -- Animations
   {
-    "echasnovski/mini.animate",
+    "nvim-mini/mini.animate",
     event = "VeryLazy",
     s = function(_, opts)
       opts.scroll = {
