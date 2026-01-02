@@ -8,7 +8,9 @@
 font pango: JetBrains Mono 12
 
 # Borders 
-default_border none
+default_border pixel 2
+default_floating_border pixel 2
+
 
 # Gaps
 gaps inner 6
@@ -29,7 +31,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show run
+set $menu wofi --show drun
 
 # Default Browser
 set $brow brave
@@ -59,6 +61,10 @@ exec swayidle -w \
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
+## Don't idle on fullscreen
+for_window [class=".*"] inhibit_idle fullscreen
+for_window [app_id=".*"] inhibit_idle fullscreen
 
 ### Input configuration
 #
