@@ -5,7 +5,6 @@ end
 # remove stupid message
 set fish_greeting
 
-
 # os-info
 # neofetch
 pfetch
@@ -35,6 +34,12 @@ alias liftingnet='cd ~/Code/fitness-network'
 alias psql='psql -U postgres'
 alias scrotate='swaymsg output VGA-1 transform 270'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Editor
+set -x EDITOR nvim
+
+# QTSettings
+set -x QT_QPA_PLATFORMTHEME qt6ct
 
 # PATHS
 set -x PATH $PATH /home/ynok/.cargo/bin
