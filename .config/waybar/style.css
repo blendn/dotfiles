@@ -172,7 +172,7 @@
 
 #cpu {
   background: @cpu;
-  color: @white;
+  color: @black;
 }
 
 #temperature {
