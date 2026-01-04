@@ -11,29 +11,31 @@ pfetch
 
 # fish prompt
 fish_config prompt choose pythonista
+fish_config theme choose ayu-mirage
 
 # aliases 
-alias fixmouse='sudo modprobe -r psmouse && sudo modprobe psmouse'
 alias off='shutdown now'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias pathls='printf "%s\n" $PATH'
 alias v='nvim'
 alias p3='python3'
-alias brave='brave-browser'
-alias brave-i='brave-browser --incognito'
-alias calc='gnome-calculator'
-alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
-alias update='sudo apt-get update && sudo apt-get upgrade'
-alias unetbootin='sudo QT_X11_NO_MITSHM=1 /usr/bin/unetbootin'
-alias lowbrightness='sudo brightnessctl s 1%'
-alias medbrightness='sudo brightnessctl s 50%'
-alias maxbrightness='sudo brightnessctl s 100%'
-alias postgresql='sudo -u postgres psql'
-alias xamppdir='cd /opt/lampp'
-alias xampp='sudo ./manager-linux-x64.run'
-alias liftingnet='cd ~/Code/fitness-network'
+alias brave-i='brave --incognito'
+alias lowbrightness='brightnessctl s 1%'
+alias medbrightness='brightnessctl s 50%'
+alias maxbrightness='brightnessctl s 100%'
 alias psql='psql -U postgres'
 alias scrotate='swaymsg output VGA-1 transform 270'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# git
+alias gits='git status'
+alias gitp='git pull'
+alias gita='git add .'
+alias gitd='git diff'
 
 # Editor
 set -x EDITOR nvim
