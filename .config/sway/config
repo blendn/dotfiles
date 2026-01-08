@@ -80,6 +80,14 @@ for_window [app_id=".*"] inhibit_idle fullscreen
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
+input "1008:2967:HP,_Inc_HyperX_Pulsefire_Haste_2" {
+    tap enabled
+    natural_scroll disabled
+    dwt enabled
+    accel_profile "flat"
+    pointer_accel 0
+  }
+
 ### Key bindings
 #
 # Basics:
